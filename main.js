@@ -1,18 +1,19 @@
-const controles = document.querySelectorAll('.controle-ajuste')
-const contador = document.querySelectorAll('.controle-contador')
-const braco = document.getElementById('braco')
-//falta generalizar seletores de value
-function manipulaDados(operacao) {
+const controles = document.querySelectorAll(".controle-ajuste")
+// const contador = document.querySelectorAll('.controle-contador')
+
+function manipulaDados(operacao, controle) {
+    const peca = controle.querySelector(".controle-contador")
     if (operacao === "+"){
-        braco.value = parseInt(braco.value)+ 1
+        peca.value = parseInt(peca.value)+ 1
     } else {
-        braco.value = parseInt(braco.value)- 1
+        peca.value = parseInt(peca.value)- 1
     }
 }
 
 controles.forEach((elemento) => { 
     elemento.addEventListener("click" , (evento) => {
-        manipulaDados(evento.target.textContent)
+        manipulaDados(evento.target.textContent, evento.target.parentNode)
+        // console.log(evento.target.parentNode)
     })}
 )
 
