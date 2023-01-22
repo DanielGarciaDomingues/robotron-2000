@@ -1,5 +1,6 @@
 const controles = document.querySelectorAll('.controle-ajuste')
-const contador = document.querySelectorAll('input.controle-contador')
+const contador = document.querySelectorAll('.controle-contador')
+const braco = document.getElementById('braco')
 //falta generalizar seletores de value
 function manipulaDados(operacao) {
     if (operacao === "+"){
