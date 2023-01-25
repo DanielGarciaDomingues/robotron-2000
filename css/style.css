@@ -235,13 +235,13 @@ main {
 @media screen and (max-width: 481px) {
     main {
         width: 100%;
-        margin: 5vh auto;
+        margin: 0.5vh auto;
         flex-flow: wrap;
     }
     
     .robo {
         position: relative;
-        width:65vh;
+        height:90vh;
         z-index: 0;
     }
     .robotron{
@@ -251,4 +251,16 @@ main {
     .estatisticas {
         flex-basis: 40%;        
     }
+    .montador{
+       height: 100vh;
+    }
+    .montador-conteudo {
+    padding: 0em 10%;
+}
+    .peca-titulo {
+    font-size: 2em; 
+    }
+    .estatistica:nth-child(2n) .estatistica-valor {
+    font-size: .6em    
+}
 }
