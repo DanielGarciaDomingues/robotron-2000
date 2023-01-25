@@ -231,3 +231,24 @@ main {
         margin: 10vh auto;
     }
 }
+
+@media screen and (max-width: 481px) {
+    main {
+        width: 100%;
+        margin: 5vh auto;
+        flex-flow: wrap;
+    }
+    
+    .robo {
+        position: relative;
+        width:65vh;
+        z-index: 0;
+    }
+    .robotron{
+        order: 1;
+        position: absolute
+    }
+    .estatisticas {
+        flex-basis: 50%;        
+    }
+}
