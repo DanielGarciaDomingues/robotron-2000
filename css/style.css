@@ -65,6 +65,7 @@ main {
     height: 80%;
 }
 
+
 /****************************** Equipamentos *****/
 
 .equipamentos {
@@ -72,18 +73,19 @@ main {
 }
 
 .montador {
-    height: 100%;;
+    height: 100%;
 }
 
 .montador-conteudo {
     padding: 2em 10%;
 }
 
-.peca {
+.peca{
     padding: 1em 0;
 }
 
-.peca-titulo {
+
+.peca-titulo{
     color: var(--main-branco);
     text-transform: uppercase;
     font-size: 2.5em;
@@ -97,6 +99,9 @@ main {
     padding: 5px;
     align-items: center;
     align-self: flex-end;
+}
+.peca:last-child .controle{
+    height: 75px;
 }
 
 .controle-contador {
@@ -112,7 +117,32 @@ main {
     align-items: center;
     padding-top: 8px;
 }
-
+input.controle-cores {
+    width: 50px;
+    height: 70px;
+    background: none;
+    border: 0;
+    margin: 0 1rem;
+    color: var(--main-branco);
+    text-align: center;
+    font-size: 2.5em;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 8px;
+    }
+.peca:last-child .controle-ajuste {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 40%;
+    color: var(--main-cinza);
+    font-size: 3em;
+    background: var(--main-preto);
+    text-align: center;
+    border: 3px solid var(--main-cinza);
+    cursor: pointer;
+}
 .controle-ajuste {
     display: inline-block;
     width: 40px;
